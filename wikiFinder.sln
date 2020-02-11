@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wikiFinder.Android", "wikiFinder\wikiFinder.Android\wikiFinder.Android.csproj", "{DD16E7FD-C7EF-44FA-AA2E-18DF0C8E11A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wikiFinder", "wikiFinder\wikiFinder\wikiFinder.csproj", "{615B529A-07C7-4957-B371-0562112F722A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD16E7FD-C7EF-44FA-AA2E-18DF0C8E11A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD16E7FD-C7EF-44FA-AA2E-18DF0C8E11A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD16E7FD-C7EF-44FA-AA2E-18DF0C8E11A6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DD16E7FD-C7EF-44FA-AA2E-18DF0C8E11A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD16E7FD-C7EF-44FA-AA2E-18DF0C8E11A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD16E7FD-C7EF-44FA-AA2E-18DF0C8E11A6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{615B529A-07C7-4957-B371-0562112F722A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615B529A-07C7-4957-B371-0562112F722A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615B529A-07C7-4957-B371-0562112F722A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615B529A-07C7-4957-B371-0562112F722A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ADCCA23-945B-4C8F-997C-7026847EB8DF}
+	EndGlobalSection
+EndGlobal
