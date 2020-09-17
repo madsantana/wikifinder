@@ -37,12 +37,13 @@ namespace wikiFinder
 
                 dadosWikipedia dados = (dadosWikipedia)response.result;
 
-                this.Navigation.PushAsync(new Pesquisa());
+                this.Navigation.PushAsync(new Pesquisa(dados));
             }
 
             catch(Exception erro)
             {
 
+                DisplayAlert("Erro!", "Tente refinar os parâmetros de busca.", "OK");
 
 
             }

@@ -16,5 +16,36 @@ namespace wikiFinder
         {
             InitializeComponent();
         }
+
+        public Pesquisa(dadosWikipedia dados)
+        {
+            InitializeComponent();
+            lTitulo.Text = dados.title;
+            GetImages(dados);
+            //iImagem.Source = dados.images[0];
+            eDados.Text = dados.content;
+
+        }
+
+        public void GetImages(dadosWikipedia dados)
+        {
+            string imagem = "";
+            int i = 0;
+            while (i < dados.images.Length && imagem == "")
+            {
+
+                if (dados.images[i].IndexOf("jpg") > 0)
+                {
+
+                    imagem = dados.images[i];
+                    Image image = new Image { Source = imagem, HeightRequest = 300 };
+                    sImagens.Children.Add(image);
+                }
+
+                i++;
+
+            } 
+
+        }
     }
 }

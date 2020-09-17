@@ -3,11 +3,31 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Authors>Marco Antonio Damaceno Santana</Authors>
+    <Company>FengFu Software</Company>
+    <Description>Sabe aquela busca específica que você gostaria de fazer no Wikipedia? Então, agora basta abrir este aplicativo, digitar a sua busca, e aproveite o tempo de sobra.
+
+Dúvidas, críticas e sugestões: marco.damaceno@gmail.com</Description>
+    <Copyright>Marco Antonio Damaceno Santana</Copyright>
+    <PackageIcon>favicon.ico</PackageIcon>
+    <PackageIconUrl />
+    <PackageTags>Wikipedia, wiki, busca, wikisearch, finder, wikifinder, encontrar</PackageTags>
+    <PackageReleaseNotes>Esta é uma primeira versão, novos recursos devem ser implementados em breve.</PackageReleaseNotes>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants />
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,5 +40,12 @@
     <EmbeddedResource Update="Pesquisa.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\_Organizar\Sources\Carder&amp;Banker\Carder&amp;Banker\Pack Checkers 2019 - DarkCoder\Pack Checkers 2019 - DarkCoder\img\favicon.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>

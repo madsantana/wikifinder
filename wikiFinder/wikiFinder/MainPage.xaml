@@ -5,22 +5,39 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="wikiFinder.MainPage"
+             Padding="0,20,0,0"
              Title="wikiFinder - Home">
 
     <StackLayout>
         <!-- Place new controls here -->
 
-        <Image Source="https://4.bp.blogspot.com/-Luim1Y1y898/VcLMClL-0vI/AAAAAAAAABk/ISLuclDnfB8/s1600/Lupa.png" />
-        
+        <Image Source="https://cdn.dribbble.com/users/1471713/screenshots/5009975/search-final2.gif" />
         <Label Text="wikiFinder"
 	        HorizontalOptions="Center"
 	        FontSize="Large"
             TextColor="Blue"
         
         />
+
+        <Entry x:Name="eValor" Placeholder="Pesquise no WikiPedia">
+
+            <Entry.Triggers>
+                <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                <Setter Property="BackgroundColor" Value="Yellow" />
+                </Trigger>
+            </Entry.Triggers>
+
+        </Entry>
         
-        <Entry x:Name="eValor" Placeholder="Pesquise no WikiPedia"/>
         <Button x:Name="btExecutar" Text="Buscar" Clicked="btExecutar_Clicked"/>
+
+        <Label Text="&#10;by Marco Antonio Damaceno - 2020 - &#128526;"
+	        HorizontalOptions="Center"
+	        FontSize="Small"
+            TextColor="#A09694"
+        
+        />
+
 
     </StackLayout>
 

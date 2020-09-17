@@ -4,12 +4,36 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="wikiFinder.Pesquisa">
+             x:Class="wikiFinder.Pesquisa"
+             Title="Resultado.:">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="Você está com sorte!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" 
+                    FontSize="Large" x:Name="lTitulo"/>
+
+                <ScrollView Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <StackLayout Orientation="Horizontal" x:Name="sImagens" >
+                        
+                        
+                    </StackLayout>    
+                    
+                </ScrollView>
+                
+                
+                <!--<Image x:Name="iImagem" />-->
+                <Editor x:Name="eDados" IsEnabled="False"/>
+                
+
+            </StackLayout>
+            
+        </ScrollView>
+            
+           
+        
     </ContentPage.Content>
 </ContentPage>
